@@ -1,0 +1,38 @@
+#>>Importing turtle from python library.
+import turtle
+
+#>>Initialize the Turtle and Screen.
+py = turtle.Turtle()
+
+#>>Turtle Screen center of the screen.
+s = turtle.Screen()
+
+#>>Background is set to black color.
+s.bgcolor("black")
+
+#>>set pen width 2.
+py.width(2)
+
+#>>speed is set to 31.
+py.speed(31)
+
+#>>Defining Colors.Creating a list of colours."""
+col = ('white','pink', 'cyan')
+
+#>>Creating a loop where it will run 150 times.
+for i in range(150):
+    #>>Pen color is set on the current index.
+    py.pencolor(col[i%3])
+    #>>Here this statement increase distance with each iteration.
+    py.forward(i*4)
+    #>>Turning turtle right by 121 degrees
+    py.right(121)
+    
+"""
+Continue the loop, creating a spiral patter.
+Color changes alternatly every segments.
+The spiral grows outwaed with each line segmwnt gettting longer.
+After 150 iterations,the final spiral pattern emerges.
+The spiral has alternating colors (white, pink, cyan)
+and grows larger as the turtle moves further from the center.
+"""
