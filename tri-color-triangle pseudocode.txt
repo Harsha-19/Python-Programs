@@ -1,0 +1,30 @@
+Step 1: Initialize the Turtle and Screen
+        Set up the turtle and screen.
+
+Turtle:    Initialized at the center of the screen.
+Screen:    Background is set to black.
+Pen Width: Set to 2.
+Speed:     Set to maximum.
+
+Step 2: Define Colors
+Action: Create a list of colors ('white', 'pink', 'cyan').
+
+
+Step 3: Start the Loop (Iterate 150 Times)
+Action: Begin a loop that will run 150 times.
+
+Pen Color:    Set based on the current index.
+Move Forward: Distance increases with each iteration.
+Turn Right:   By 121 degrees.
+
+Step 4: Draw the Spiral
+        Continue the loop, creating a spiral pattern.
+
+Color Change:  The pen color alternates every few segments.
+Spiral Growth: The spiral grows outward, with each line segment getting longer.
+
+Step 5:  Resulting Pattern
+         After 150 iterations, the final spiral pattern emerges.
+
+Pattern: The spiral has alternating colors (white, pink, cyan) and grows larger 
+as the turtle moves further from the center.
