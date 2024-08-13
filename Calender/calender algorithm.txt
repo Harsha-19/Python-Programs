@@ -1,0 +1,74 @@
+Algorithm
+Initialization
+Initialize colorama:
+
+Import and initialize colorama for colored output.
+Define Classes:
+
+Remainder Class: Define a class to store date and note information.
+Functions
+clear_screen():
+
+Clear the console screen based on the operating system (Windows or Unix-like).
+set_color(foreground, background):
+
+Set the text and background color for console output using colorama.
+print_date(mm, yy):
+
+Print the formatted month and year header.
+check_leap_year(year):
+
+Determine if a given year is a leap year.
+get_number_of_days(month, year):
+
+Return the number of days in a specified month and year.
+get_day_name(day):
+
+Convert a weekday number into its name.
+get_day_number(day, mon, year):
+
+Get the weekday number for a specific date.
+get_day(dd, mm, yy):
+
+Return the name of the day for a given date, checking validity.
+check_note(dd, mm):
+
+Check if there is a note for a given date by reading from a file.
+print_month(mon, year):
+
+Print a calendar for the specified month and year, including any notes.
+add_note():
+
+Allow the user to add a note for a specific date and save it to a file.
+show_notes(mm):
+
+Display all notes for a specified month.
+Main Logic
+Start of Program:
+
+Loop:
+Clear the screen.
+Display the main menu with choices.
+User Choice Handling:
+
+Choice 1: Find Out the Day:
+
+Prompt user for date input.
+Display the name of the day for the given date.
+Choice 2: Print all the days of the month:
+
+Prompt user for month and year.
+Loop:
+Display the calendar for the month.
+Allow navigation between months with options:
+'n' for Next month.
+'p' for Previous month.
+'s' to Show notes for the current month.
+'q' to Quit month display.
+Choice 3: Add Note:
+
+Prompt user for date and note input.
+Save the note to the file.
+Choice 4: Exit:
+
+Terminate the program.

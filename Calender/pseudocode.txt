@@ -1,0 +1,75 @@
+Initialize colorama
+
+Define class Remainder with attributes dd, mm, note
+
+Function clear_screen:
+    If operating system is Windows:
+        Clear screen using 'cls'
+    Else:
+        Clear screen using 'clear'
+
+Function set_color(foreground, background):
+    Set the color of text output
+
+Function print_date(mm, yy):
+    Print formatted month and year header
+
+Function check_leap_year(year):
+    Return True if year is a leap year, else False
+
+Function get_number_of_days(month, year):
+    Return number of days in the month based on the year
+
+Function get_day_name(day):
+    Return name of the weekday for the given day number
+
+Function get_day_number(day, mon, year):
+    Return weekday number for the specific date
+
+Function get_day(dd, mm, yy):
+    If month or day is invalid:
+        Return error message
+    Else:
+        Return name of the day for the given date
+
+Function check_note(dd, mm):
+    Open note file
+    For each note in file:
+        If note matches the given date:
+            Return True
+    Return False
+
+Function print_month(mon, year):
+    If month or year is invalid:
+        Print error message
+    Else:
+        Print calendar for the month
+        For each day in the month:
+            Print day with color if there is a note
+
+Function add_note:
+    Prompt user for date and note
+    Save note to file
+
+Function show_notes(mm):
+    Open note file
+    For each note in file:
+        If note is for the given month:
+            Print note details
+    If no notes found:
+        Print message
+
+Function main:
+    While True:
+        Clear screen
+        Display menu options
+        Prompt user for choice
+        If choice is 1:
+            Prompt for date and display day
+        Else if choice is 2:
+            Prompt for month and year
+            Loop through months with options for navigation and showing notes
+        Else if choice is 3:
+            Add a note
+        Else if choice is 4:
+            Exit the program
